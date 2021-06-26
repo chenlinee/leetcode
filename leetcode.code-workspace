@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "0000.template"
+		},
+		{
+			"path": "0211.add_AND_search_words"
 		}
 	],
 	"settings": {}
