@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "0211.add_AND_search_words"
+		},
+		{
+			"path": "0023.merge-k-sorted-lists"
 		}
 	],
 	"settings": {}
