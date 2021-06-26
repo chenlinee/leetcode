@@ -4,6 +4,9 @@
 			"path": "0000.template"
 		},
 		{
+			"path": "0097.isInterleave"
+		},
+		{
 			"path": "0211.add_AND_search_words"
 		}
 	],
