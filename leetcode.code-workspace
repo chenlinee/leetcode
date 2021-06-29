@@ -7,6 +7,9 @@
 			"path": "0097.isInterleave"
 		},
 		{
+			"path": "0169.majority-element"
+		},
+		{
 			"path": "0211.add_AND_search_words"
 		},
 		{
