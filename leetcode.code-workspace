@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "0084.largest-rectangle-in-histogram"
+		},
+		{
 			"path": "0240.search-a-2d-matrix-ii"
 		},
 		{
