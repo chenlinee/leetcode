@@ -3,6 +3,7 @@ project(solution VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
+add_definitions(-Wall)
 
 add_executable(solution main.c solution.c)
 
