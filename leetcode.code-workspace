@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "0209.minimum-size-subarray-sum"
+		},
+		{
 			"path": "0684.redundant-connection"
 		},
 		{
