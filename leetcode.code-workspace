@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "0003.longest-substring-without-repeating-characters"
+		},
+		{
 			"path": "0209.minimum-size-subarray-sum"
 		},
 		{
