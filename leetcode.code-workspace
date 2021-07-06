@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "1004.max-consecutive-ones-iii"
+		},
+		{
 			"path": "0003.longest-substring-without-repeating-characters"
 		},
 		{
