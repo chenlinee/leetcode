@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "0005.longest-palindromic-substring"
+		},
+		{
 			"path": "0210.course-schedule-ii"
 		},
 		{
