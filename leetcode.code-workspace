@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "0020.valid-parentheses"
+		},
+		{
 			"path": "0005.longest-palindromic-substring"
 		},
 		{
