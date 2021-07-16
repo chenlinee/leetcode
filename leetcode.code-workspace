@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "0033.search-in-rotated-sorted-array"
+		},
+		{
 			"path": "0093.restore-ip-addresses"
 		},
 		{
