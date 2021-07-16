@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "0127.word-ladder"
+		},
+		{
 			"path": "0034.find-first-and-last-position-of-element-in-sorted-array"
 		},
 		{
