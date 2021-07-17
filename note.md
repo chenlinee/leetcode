@@ -84,6 +84,26 @@ else
 
 　　申请大范围的内存，不管是从堆中申请还是栈申请，**一定要初始化内存内容**，否则会导致预料之外的错误。包括任何变量、结构体、数组，所有内容都要有初始化，循环体使用时要格外注意初始化的位置。在不同环境中，申请内存的操作是否带有初始化是不确定的，手动初始化可以很好地避免这个问题。
 
+## 多个判断条件导致的截断问题  
+
+　　C 语言在与或条件判断时，**会在前一个条件满足时，不再执行后面的判断，直接返回结果**。这个特性可以十分方便地用来做很多事情，比如数组下标的合法性判断，判断成功才访问数组，避免下标超出数组的内存范围。但是也要格外小心这个特性带来的错误，比如下面这个深度优先搜索的问题，ret 变量需要保存每次返回的条件。但是实际上，一旦 `ret == false` 与 `ret` 并列的搜索语句都不会执行。
+
+```c
+bool ret = true;
+// <<<<<<< right
+if(i > 0)       {ret = search(i - 1, j, board) && ret;}
+if(i < row - 1) {ret = search(i + 1, j, board) && ret;}
+if(j > 0)       {ret = search(i, j - 1, board) && ret;}
+if(j < col - 1) {ret = search(i, j + 1, board) && ret;}
+// =======
+//  if(i > 0)       {ret = ret && search(i - 1, j, board);}
+//  if(i < row - 1) {ret = ret && search(i + 1, j, board);}
+//  if(j > 0)       {ret = ret && search(i, j - 1, board);}
+//  if(j < col - 1) {ret = ret && search(i, j + 1, board);}
+// >>>>>>> error
+return ret;
+```
+
 
 
 
